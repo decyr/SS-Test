@@ -1,12 +1,12 @@
 document.getElementById('robloxButton').addEventListener('click', function() {
-    fetch('http://localhost:8080/', {
+    fetch('https://www.roblox.com/games/18379860529/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
             key: '6230927530_5728571899',
-            script: 'print("Hello world")'
+            welcome_message: 'Hi Owner, welcome to the game!'
         })
     })
     .then(response => response.json())
