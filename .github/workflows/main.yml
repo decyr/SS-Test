@@ -1,0 +1,14 @@
+name: Handle Roblox Actions
+
+on:
+  push:
+    branches:
+      - main  # Adjust if your main branch is named differently
+
+jobs:
+  handle-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Action
+        run: |
+          echo "Action received: ${{ github.event.head_commit.message }}"
