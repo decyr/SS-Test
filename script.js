@@ -1,5 +1,5 @@
 document.getElementById('robloxButton').addEventListener('click', function() {
-    fetch('https://your-github-actions-url.com/action', {
+    fetch('http://localhost:8080/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
